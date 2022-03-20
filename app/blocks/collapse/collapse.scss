@@ -1,0 +1,36 @@
+.section-collapse {
+  &__wrap {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 100px;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 160%;
+    color: #161616;
+  }
+
+  &__post {
+    color: #898892;
+  }
+
+  &__start {
+    max-width: 320px;
+
+    > * {
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  &__btn {
+    border: none;
+    color: #898892;
+    background: transparent;
+  }
+}
+
+[aria-expanded="false"] > .expanded,
+[aria-expanded="true"] > .collapsed {
+  display: none;
+}

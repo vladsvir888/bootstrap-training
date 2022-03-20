@@ -1,0 +1,27 @@
+.section-scroll-spy {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__start {
+    width: 20%;
+  }
+
+  &__end {
+    font-size: 16px;
+    line-height: 30px;
+    width: 75%;
+
+    > * {
+      &:not(:last-child) {
+        padding-bottom: 40px;
+      }
+    }
+  }
+}
+
+.list-group {
+  position: sticky;
+  top: 15px;
+}

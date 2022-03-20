@@ -1,0 +1,15 @@
+.section-dropdown {
+  &__inner {
+    display: flex;
+
+    > * {
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &__drop-menu {
+    width: 165px;
+  }
+}
